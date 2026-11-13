@@ -6,7 +6,9 @@ Painel de inteligência de agenda para pequenos negócios de serviços. A demons
 
 ## Demonstração
 
-Abra index.html ou publique a raiz no GitHub Pages. O modo público roda cálculos locais, sem enviar conteúdo para um modelo. A ação “Comparar capacidade” ilustra quantos horários adicionais poderiam ser considerados conforme a taxa de preenchimento do conjunto sintético.
+**Demo online:** [Abrir AgendaIQ](https://jhowtelli.github.io/agendaiq/).
+
+O modo público roda cálculos locais, sem enviar conteúdo para um modelo. A ação “Comparar capacidade” ilustra quantos horários adicionais poderiam ser considerados conforme a taxa de preenchimento do conjunto sintético. Também é possível abrir index.html ou publicar a raiz no GitHub Pages.
 
 Para chamar o backend local pela página, sirva a pasta em um terminal com py -m http.server 5500, abra http://localhost:5500 e inicie a API em outro terminal.
 
