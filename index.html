@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="AgendaIQ: explore procura, faltas e capacidade em dados sintéticos para pequenos negócios.">
+  <title>AgendaIQ — Inteligência de agenda</title>
+  <style>
+    :root{--sand:#e8dcc7;--oat:#d4b895;--sage:#8b9d83;--moss:#606c38;--clay:#b08b6e;--terra:#c66b3d;--ink:#283126;--muted:#586253;--line:#9dac91;--white:#f5ead8;font-family:"Trebuchet MS",Arial,sans-serif;color-scheme:light}
+    *{box-sizing:border-box}body{margin:0;background:var(--sand);color:var(--ink);font-size:15px;line-height:1.55}body:before{content:"";position:fixed;inset:0;pointer-events:none;opacity:.025;z-index:5;background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 180 180' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.8' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='.45'/%3E%3C/svg%3E")}.wrap{max-width:1220px;margin:auto;padding:28px}.top{display:flex;justify-content:space-between;align-items:center;border-bottom:1px solid var(--line);padding-bottom:18px}.brand{font-family:Georgia,serif;font-size:26px;letter-spacing:-1px}.brand span{color:var(--terra)}.badge{padding:7px 11px;border:1px solid var(--moss);border-radius:999px;color:var(--moss);font-size:11px}.hero{display:grid;grid-template-columns:1fr .6fr;gap:40px;align-items:end;padding:54px 0 36px}.kicker{color:var(--moss);font-size:12px;text-transform:uppercase;letter-spacing:.14em}h1,h2,h3,p{margin-top:0}h1{font-family:Georgia,serif;font-size:clamp(44px,7vw,80px);line-height:.98;letter-spacing:-.055em;margin:12px 0 20px;max-width:700px}.hero p{max-width:620px;color:var(--muted);font-size:17px}.insight{background:var(--moss);color:var(--white);padding:24px;border-radius:22px 22px 22px 5px}.insight small{display:block;color:#d7dfc8;margin-bottom:13px}.insight strong{font-family:Georgia,serif;font-size:24px;font-weight:500}.metrics{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}.metric{padding:18px;background:var(--oat);border-radius:18px}.metric small{display:block;color:var(--muted);font-size:11px}.metric strong{display:block;font-family:Georgia,serif;font-size:31px;margin-top:6px}.metric span{color:var(--moss);font-size:11px}.main{display:grid;grid-template-columns:1.1fr .9fr;gap:18px;margin-top:18px}.card{padding:24px;background:var(--white);border-radius:22px}.card h2{font-family:Georgia,serif;font-size:25px;font-weight:500;margin-bottom:3px}.note{color:var(--muted);font-size:12px;margin-bottom:18px}.bar{display:grid;grid-template-columns:92px 1fr 42px;gap:10px;align-items:center;margin:14px 0;font-size:12px}.rail{height:11px;background:#d7c8ae;border-radius:99px;overflow:hidden}.fill{height:100%;background:var(--moss);border-radius:99px;transition:width .35s ease}.fill.hot{background:var(--terra)}.service-list{display:grid;grid-template-columns:1fr 1fr;gap:10px}.service{padding:14px;border:1px solid var(--line);border-radius:16px}.service b{display:block}.service small{color:var(--muted)}.service strong{float:right;color:var(--terra);font-family:Georgia,serif;font-size:19px}.control{margin-top:20px;padding-top:18px;border-top:1px solid var(--line)}.control-row{display:flex;gap:12px;align-items:end}.field{flex:1}.field label{display:block;margin-bottom:5px;color:var(--muted);font-size:12px}select,input,textarea{width:100%;background:transparent;border:1px solid var(--line);border-radius:12px;padding:11px;color:var(--ink);font:inherit}.button{border:0;border-radius:999px;background:var(--terra);color:#fff;padding:12px 18px;font-weight:700;cursor:pointer;transition:transform .3s ease,background .3s ease}.button:hover{transform:translateY(-2px);background:#a8512c}.output{margin-top:14px;padding:14px;border-radius:14px;background:var(--sand);min-height:54px;color:var(--muted);font-size:13px}.agent{margin-top:18px}.agent textarea{min-height:82px;resize:vertical}.agent .control-row{margin-top:10px}.footer{display:flex;justify-content:space-between;gap:14px;margin-top:22px;padding-top:16px;border-top:1px solid var(--line);color:var(--muted);font-size:11px}
+    @media(max-width:800px){.hero,.main{grid-template-columns:1fr}.metrics{grid-template-columns:repeat(2,1fr)}}@media(max-width:500px){.wrap{padding:18px}.metrics{gap:8px}.metric{padding:13px}.metric strong{font-size:25px}.control-row{align-items:stretch;flex-direction:column}.button{width:100%}.footer{flex-direction:column}}
+  </style>
+</head>
+<body>
+  <main class="wrap">
+    <header class="top"><div class="brand">agenda<span>iq</span></div><div class="badge">Demonstração · dados sintéticos</div></header>
+    <section class="hero">
+      <div><div class="kicker">Leitura de agenda para pequenos negócios</div><h1>Uma agenda cheia começa com boas perguntas.</h1><p>Explore procura, faltas e capacidade a partir de um conjunto demonstrativo. Use cenários para apoiar decisões; o painel não agenda nem contata clientes.</p></div>
+      <aside class="insight"><small>LEITURA DO CONJUNTO FICTÍCIO</small><strong>O sábado concentra mais horários concluídos nesta amostra de 24 registros.</strong></aside>
+    </section>
+    <section class="metrics" aria-label="Indicadores sintéticos">
+      <article class="metric"><small>Registros na amostra</small><strong>24</strong><span>dados fictícios</span></article>
+      <article class="metric"><small>Horários concluídos</small><strong>18</strong><span>na amostra</span></article>
+      <article class="metric"><small>Faltas registradas</small><strong>4</strong><span>na amostra</span></article>
+      <article class="metric"><small>Cancelamentos</small><strong>2</strong><span>na amostra</span></article>
+    </section>
+    <section class="main">
+      <article class="card">
+        <h2>Procura por dia</h2><p class="note">Contagem fictícia de horários concluídos no conjunto local.</p>
+        <div class="bar"><span>Segunda</span><div class="rail"><div class="fill" style="width:45%"></div></div><b>3</b></div>
+        <div class="bar"><span>Terça</span><div class="rail"><div class="fill" style="width:45%"></div></div><b>3</b></div>
+        <div class="bar"><span>Quarta</span><div class="rail"><div class="fill" style="width:45%"></div></div><b>3</b></div>
+        <div class="bar"><span>Quinta</span><div class="rail"><div class="fill" style="width:30%"></div></div><b>2</b></div>
+        <div class="bar"><span>Sexta</span><div class="rail"><div class="fill" style="width:45%"></div></div><b>3</b></div>
+        <div class="bar"><span>Sábado</span><div class="rail"><div class="fill hot" style="width:60%"></div></div><b>4</b></div>
+        <div class="control">
+          <h2 style="font-size:21px">Comparar capacidade</h2><p class="note">Cálculo ilustrativo com a taxa do conjunto sintético.</p>
+          <div class="control-row"><div class="field"><label for="service">Serviço</label><select id="service"><option value="corte">Corte</option><option value="barba">Barba</option><option value="coloracao">Coloração</option><option value="manicure">Manicure</option></select></div><div class="field"><label for="slots">Horários adicionais</label><select id="slots"><option>2</option><option selected>4</option><option>6</option><option>8</option><option>10</option></select></div><button class="button" id="compare">Comparar</button></div>
+          <div class="output" id="scenario" aria-live="polite">Escolha um serviço e uma quantidade de horários para comparar.</div>
+        </div>
+      </article>
+      <article class="card">
+        <h2>Serviços na amostra</h2><p class="note">Distribuição de registros fictícios por serviço.</p>
+        <div class="service-list">
+          <div class="service"><strong>10</strong><b>Corte</b><small>maior grupo da amostra</small></div>
+          <div class="service"><strong>6</strong><b>Barba</b><small>registros fictícios</small></div>
+          <div class="service"><strong>4</strong><b>Coloração</b><small>registros fictícios</small></div>
+          <div class="service"><strong>4</strong><b>Manicure</b><small>registros fictícios</small></div>
+        </div>
+        <div class="agent">
+          <div class="control">
+            <h2 style="font-size:21px">Perguntar aos agentes</h2><p class="note">Especialistas consultam o CSV local pela API que você iniciar.</p>
+            <textarea id="question" maxlength="2000">Qual serviço teve mais faltas nesta amostra e qual é o limite dessa conclusão?</textarea>
+            <div class="control-row" style="margin-top:10px"><div class="field"><label for="apiBase">API local</label><input id="apiBase" value="http://localhost:8000"></div><button class="button" id="ask">Consultar agentes</button></div>
+            <div class="output" id="agentResult" aria-live="polite">API local não conectada. A demonstração pública não envia dados ao modelo.</div>
+          </div>
+        </div>
+      </article>
+    </section>
+    <footer class="footer"><span>AgendaIQ · protótipo de portfólio</span><span>Sem agendações, cobranças ou mensagens automáticas.</span></footer>
+  </main>
+  <script>
+    const rates={corte:0.8,barba:0.8,coloracao:1,manicure:0.75};
+    document.getElementById("compare").addEventListener("click",()=>{
+      const service=document.getElementById("service").value,slots=Number(document.getElementById("slots").value),filled=Math.round(slots*rates[service]);
+      document.getElementById("scenario").textContent="Cenário sintético: "+filled+" de "+slots+" horários adicionais seriam preenchidos se a taxa fictícia do serviço se repetisse. Isso não é previsão nem agendamento.";
+    });
+    document.getElementById("ask").addEventListener("click",async()=>{
+      const result=document.getElementById("agentResult");result.textContent="Consultando agentes...";
+      try{
+        const base=document.getElementById("apiBase").value.trim().replace(/\/+$/,"");
+        const response=await fetch(base+"/api/analyze",{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify({question:document.getElementById("question").value})});
+        const data=await response.json();if(!response.ok)throw new Error(data.detail||"A consulta não foi concluída.");
+        result.textContent=data.specialist+": "+data.answer;
+      }catch(error){result.textContent=error.message+" Inicie a API local conforme o README.";}
+    });
+  </script>
+</body>
+</html>
